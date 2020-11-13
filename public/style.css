@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f1fbff;
+  color: rgb(124 119 119);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px -2px #cdd5d9, -5px -5px 10px #ffffff;
+}
+
+.logo img {
+  width: 30px;
+}
+
+.title {
+  font-family: 'Pacifico', cursive;
+  margin-left: 10px;
+  font-size: 1.6em;
+  color: #00a9f4;
+}
+
+#container {
+  padding: 1em 1.5em;
+  max-width: 600px;
+  margin: 0 auto;
+  max-height: calc(100vh - 83px);
+  overflow-y: scroll;
+}
+
+header {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  flex-basis: 100%;
+  margin-bottom: 1.5em;
+}
+
+li.recieved {
+  text-align: right;
+}
+
+.msg span {
+  text-align: left;
+  font-size: 1.1em;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 5px 5px 10px -2px #cdd5d9, -5px -5px 10px #ffffff;
+}
+
+form {
+  padding: 10px;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  background: #f1fbff;
+  border-radius: 10px;
+  box-shadow: inset 9.91px 9.91px 15px -9px #dbe4e8, inset -9.91px -9.91px 15px -5px #ffffff;
+  display: flex;
+}
+
+input[type='text'] {
+  color: rgb(124 119 119);
+  background-color: #f1fbff;
+  margin: 10px;
+  flex-grow: 1;
+  font-size: 1.1em;
+  border: 0;
+  outline: none !important;
+}
+
+button {
+  height: 40px;
+  width: 40px;
+  padding: 8px;
+  flex-shrink: 0;
+  font-size: 1.1em;
+  border: 0;
+  border-radius: 10px;
+  background: #f1fbff;
+  box-shadow: 5px 5px 10px -5px #cdd5d9, -5px -5px 10px #ffffff;
+  outline: none !important;
+}
+
+button:active {
+  background: linear-gradient(145deg, #d9e2e6, #ffffff);
+  box-shadow: 5px 5px 10px #cdd5d9, -5px -5px 10px #ffffff;
+}
+
+.typing-animation span {
+  letter-spacing: -3px;
+  display: inline-block;
+  animation: typing-animation 2s ease infinite;
+}
+
+.typing-animation span:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.typing-animation span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes typing-animation {
+  0%,
+  20% {
+    transform: translateY(0);
+  }
+
+  10% {
+    transform: translateY(-5px);
+  }
+}

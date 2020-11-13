@@ -1,0 +1,23 @@
+{
+  "name": "my-chat",
+  "version": "1.0.0",
+  "description": "Just simple chat app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "socket.io",
+    "express"
+  ],
+  "author": "CodeMafia",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

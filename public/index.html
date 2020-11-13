@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Chat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+
+        <header>
+            <div class="logo">
+                <img src="/imgs/twitter.svg" alt="">
+            </div>
+            <div class="title">My Chat</div>
+        </header>
+        <ul id="messages">
+        </ul>
+        <form>
+            <input id="input-field" autocomplete="off" type="text" name="input" placeholder="type something...">
+            <button type="submit"><img src="/imgs/paper-plane.svg" alt=""></button>
+        </form>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
